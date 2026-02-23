@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    --font-color:#ed6d0a;
+    --font-family:Georgia, 'Times New Roman', Times, serif;
+    --back-color:#e1dbd6;
+}
+
+.image{
+    height: 680px;
+    width: 600px;
+    position: relative;
+    top: 0;
+    left: 800px;
+    display: flex;
+    box-shadow: solid var(--back-color);
+}
+.navbar{
+    background-color:var(--back-color);
+    display:flex;
+    color: var(--back-color);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height:60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-left{
+    padding-left: 50px;
+    color: #ed6d0a;
+    cursor: pointer;
+
+}
+.navbar-left:hover{
+    background-color: var(--back-color);
+    color: black;
+}
+
+.name{
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-size: 25px;
+    font-weight: 500;
+}
+a{
+    padding: 20px;
+    text-decoration: none;
+}
+a:hover{
+    background-color:var(--font-color);
+    color: white;
+    border-radius: 15px;
+}
+.body{
+    position: relative;
+    z-index: 1;
+}
+
+.home{
+    display: flex;
+    height: 700px;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+    padding-top: 80px;
+}
+.text{
+    padding-top: 100px;
+    height: auto;
+    width: auto;
+}
+.text-inside{
+    display: flex;
+    padding-top: 100px;
+    justify-content:space-between;
+}
+
+.image1{
+    width: 400px;
+    height: 400px;
+    margin-left: 80px;
+    background-color: var(--font-color);
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: transform 0.8s ease;
+    cursor: pointer;
+}
+.image1:hover{
+    transform: scale(1.2);
+}
+.class1{
+    font-size: larger;
+    font-family: var(--font-family);
+    background-color: #b8c0b8;
+    color: black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.class1:hover{
+    background-color:var(--font-color);
+    color: white;
+}
+.education-details{
+    width: auto;
+    height: 760px;
+    padding-top: 80px;
+}
+.title{
+    padding-left: 80px;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size:150%;
+    color: var(--font-color);
+    font-family: var(--font-family);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.title img{
+    width: 40px;
+    height: 40px;
+}
+table,tr,td,th{
+    text-align: center; 
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: large;
+    font-family: var(--font-family);
+    font: bold;
+    background-color: var(--back-color);
+}
+.table{
+    justify-items: center;
+    width: 100%;
+    height: 600px;
+    padding-top: 40px;
+}
+.table-details{
+    height: 90%;
+    width: 90%;
+}
+.skills-acquired{
+    padding-bottom: 100px;
+    padding-top: 80px;
+}
+.skills-container{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.skill{
+    padding-top: 10px;
+    justify-items:first baseline;
+}
+.card-container{
+    display: flex;
+    justify-content:space-around;
+    padding: 50px;
+}
+.card{
+    border: 1px solid rgb(245, 236, 236);
+    border-radius: 0px 30px;
+    background-color: var(--back-color);
+    width: 300px;
+    padding: 20px;
+}
+.type-head{
+    font-family: var(--font-family);
+    font-size: large;
+    font-weight: bold;
+}
+.card:hover  {
+       background-color: var(--font-color);
+       color: white;
+}
+li{
+    font-family: var(--font-family);
+    padding: 10px;
+    font-weight: 400;
+}
+
+.projects{
+    width: 100%;
+    height: 700px;
+    padding-top: 80px;
+}
+.project-container{
+    width: auto;
+    height: auto;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+.card1{
+    width: 93%;
+    height: 150px;
+    margin-bottom: 30px;
+    border-radius: 0px 30px;
+    padding: 18px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    background-color: var(--back-color);
+}
+.card1:hover{
+    background-color: var(--font-color);
+    color: white;
+}
+.card1-right{
+    padding-top: 45px;
+}
+.card1-right img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.experience{
+    padding-top: 80px;
+
+}
+
+.exp-container{
+    margin: 5%;
+    background-color: #e1dbd6;
+    padding: 85px;
+    border-radius: 0px 60px 0px 60px;
+}
+.exp-nav{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;padding-bottom: 20px;
+}
+
+.card2{
+    font-family: var(--font-family);
+    padding: 20px;
+}
+.card2-left{
+    font-weight: 900;
+    font-size: larger;
+}
+.form{
+    height: 700px;
+}
+.form-container{
+    width:auto;
+    justify-items: center;
+    padding-top: 150PX;
+}
+.title1{
+    font-size:medium;
+    font-weight:800;
+    font-family: var(--font-family);
+
+}
+.title2{
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: 50px;
+}
+.form-inside-container{
+    display: flex;
+    border: 1px solid black;
+    justify-items: center;
+    align-items: center;
+    width: 400px;
+    justify-content: center;
+    border-radius: 20PX;
+    padding: 15PX;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    cursor: pointer;
+    background-color: var(--back-color);
+}
+.form-inside-container:hover{
+    background-color: var(--font-color);
+    color: white;
+}
+.form-container img{
+    width: 30px;
+    height: 30px;
+}
+.form-container div{
+    padding: 10px;
+}
+.footer{
+    margin-left: 580px;
+    margin-top: 200px;
+}
