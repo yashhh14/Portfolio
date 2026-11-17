@@ -582,3 +582,27 @@ section{ position:relative; z-index:1; }
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
 }
+/* ---- Floating Particle Network Background ---- */
+#particle-network {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+/* Keep all existing content above the particle canvas */
+.navbar,
+.hero,
+.section,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+/* 
+Keep the back-to-top button clickable and visible
+.to-top {
+  z-index: 100;
+} */
