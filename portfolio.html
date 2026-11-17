@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./portfolio.css">
 </head>
-<body>
 
+<body>
+<canvas id="particle-network" aria-hidden="true"></canvas>
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="navbar-left" onclick="window.scrollTo({top:0,behavior:'smooth'})">
@@ -84,8 +86,8 @@
             </span><span class="ln">&nbsp;&nbsp;name: <span class="str">"Yashwanth Ji K"</span>,</span><span
               class="ln">&nbsp;&nbsp;role: <span class="str">"Software Developer"</span>,</span><span
               class="ln">&nbsp;&nbsp;education: <span class="str">"B.Tech IT"</span>,</span><span
-              class="ln">&nbsp;&nbsp;stack: [<span class="str">"Python"</span>, <span class="str">"MERN Stack"</span>, <span
-                class="str">"FUll-Stack"</span>],</span><span class="ln">&nbsp;&nbsp;<span
+              class="ln">&nbsp;&nbsp;stack: [<span class="str">"Python"</span>, <span class="str">"MERN Stack"</span>,
+              <span class="str">"FUll-Stack"</span>],</span><span class="ln">&nbsp;&nbsp;<span
                 class="fn">isProblemSolver</span>: <span class="kw">true</span>,</span><span
               class="ln">&nbsp;&nbsp;<span class="fn">isHireable</span>() {</span><span
               class="ln">&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span
@@ -103,15 +105,27 @@
 
     <div class="timeline">
       <div class="timeline-fill" id="timelineFill"></div>
+
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-card">
           <div class="timeline-top">
-            <span class="timeline-degree">SSC</span>
-            <span class="timeline-year">2019</span>
+            <span class="timeline-degree">MERN Stack Development Trainee</span>
+            <span class="timeline-year">Feb – Aug 2026</span>
           </div>
-          <div class="timeline-school">Telangana State Model School, Wanaparthy</div>
-          <span class="timeline-score">CGPA: 8.7</span>
+          <div class="timeline-school">Innomatics Research Labs</div>
+          <span class="timeline-score">Technical Training</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-degree">B.Tech, Information Technology</span>
+            <span class="timeline-year">2026</span>
+          </div>
+          <div class="timeline-school">Malla Reddy Institute of Engineering and Technology, Hyderabad</div>
+          <span class="timeline-score">CGPA: 7.96</span>
         </div>
       </div>
 
@@ -134,31 +148,9 @@
             <span class="timeline-year">2019</span>
           </div>
           <div class="timeline-school">Telangana State Model School, Wanaparthy</div>
-        </div>
-      </div>
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="timeline-top">
-            <span class="timeline-degree">Intermediate</span>
-            <span class="timeline-year">2021</span>
-          </div>
-          <div class="timeline-school">M.V.S Govt Junior College, Mahabubnagar</div>
-          <span class="timeline-score">Percentage: 60.8%</span>
-        </div>
-      </div>
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="timeline-top">
-            <span class="timeline-degree">SSC</span>
-            <span class="timeline-year">2019</span>
-          </div>
-          <div class="timeline-school">Telangana State Model School, Wanaparthy</div>
           <span class="timeline-score">CGPA: 8.7</span>
         </div>
       </div>
-
 
     </div>
   </section>
@@ -173,22 +165,35 @@
       <div class="skill-card reveal">
         <div class="skill-card-head">Programming Languages</div>
         <div class="chip-row">
-          <span class="chip">JavaScript (ES6)</span>
           <span class="chip">Python</span>
           <span class="chip">JavaScript</span>
+          <span class="chip">Java Fundamentals</span>
         </div>
       </div>
 
       <div class="skill-card reveal">
-        <div class="skill-card-head">Web Technologies</div>
+        <div class="skill-card-head">Frontend Technologies</div>
         <div class="chip-row">
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">React.js</span>
           <span class="chip">Bootstrap</span>
+          <span class="chip">Material UI</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">Backend Technologies</div>
+        <div class="chip-row">
           <span class="chip">Node.js</span>
           <span class="chip">Express.js</span>
-          <span class="chip">React.js</span>
-          <span class="chip">Material UI</span>
+          <span class="chip">Django</span>
+          <span class="chip">Django REST Framework</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">JWT Authentication</span>
+          <span class="chip">Socket.IO</span>
+          <span class="chip">Multer</span>
+          <span class="chip">Redis</span>
         </div>
       </div>
 
@@ -196,6 +201,10 @@
         <div class="skill-card-head">Databases</div>
         <div class="chip-row">
           <span class="chip">MongoDB</span>
+          <span class="chip">Mongoose</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Django ORM</span>
+          <span class="chip">SQL Basics</span>
         </div>
       </div>
 
@@ -204,18 +213,22 @@
         <div class="chip-row">
           <span class="chip">Git</span>
           <span class="chip">GitHub</span>
-          <span class="chip">Postman</span>
           <span class="chip">VS Code</span>
           <span class="chip">Postman</span>
+          <span class="chip">Netlify</span>
+          <span class="chip">Render</span>
+          <span class="chip">CI/CD Fundamentals</span>
         </div>
       </div>
 
       <div class="skill-card reveal">
         <div class="skill-card-head">Core Concepts</div>
         <div class="chip-row">
-          <span class="chip">REST APIs</span>
-          <span class="chip">Responsive Design</span>
+          <span class="chip">OOP</span>
+          <span class="chip">MVC Architecture</span>
+          <span class="chip">CRUD Operations</span>
           <span class="chip">Problem Solving</span>
+          <span class="chip">Data Structures & Algorithms</span>
           <span class="chip">SDLC</span>
         </div>
       </div>
@@ -228,8 +241,10 @@
     <div class="section-head reveal">
       <div class="section-tag">projects</div>
       <h2 class="section-title">Things I've Built</h2>
-      <p class="section-sub">Two projects that reflect the front-end and full-stack sides of the work.</p>
+      <p class="section-sub">Projects showcasing my experience in full-stack development, backend engineering, and web
+        technologies.</p>
     </div>
+
     <div class="projects-grid">
 
       <!-- BookMyJourney -->
@@ -238,33 +253,86 @@
           <span class="editor-dot r" style="width:9px;height:9px;"></span>
           <span class="editor-dot y" style="width:9px;height:9px;"></span>
           <span class="editor-dot g" style="width:9px;height:9px;"></span>
-          <span class="file">bookmyjourney.html</span>
+          <span class="file">bookmyjourney.js</span>
         </div>
 
         <div class="project-body">
           <div class="project-title">BookMyJourney</div>
-          <span class="project-role">Travel Booking Platform · Frontend</span>
+          <span class="project-role">Travel Booking Platform · Full-Stack Development</span>
+
           <ul class="project-list">
-            <li>Debugged JavaScript modules and resolved UI issues across the booking flow.</li>
-            <li>Improved application performance through targeted code optimization.</li>
-            <li>Tested booking workflows end-to-end and fixed functional bugs.</li>
+            <li>Developed a travel booking platform integrating flights, trains, buses, cabs, and hotel booking modules.
+            </li>
+            <li>Implemented dynamic search, filtering, and booking workflows to improve the user experience.</li>
+            <li>Built REST API integrations and authentication functionality for managing user interactions.</li>
+            <li>Designed a responsive interface with reusable components and structured application workflows.</li>
           </ul>
 
           <div class="project-stack">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6)</span><span>LocalStorage</span><span>Responsive
-              Design</span>
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>JWT</span>
+            <span>Redis</span>
+            <span>REST APIs</span>
           </div>
 
           <div class="project-links">
-            <a class="project-link live" href="https://bookmyjourneyappv2.netlify.app/" target="_blank" rel="noopener">↗
-              Live Demo</a>
+            <a class="project-link live" href="https://bookmyjourneyappv2.netlify.app/" target="_blank" rel="noopener">
+              ↗ Live Demo
+            </a>
             <a class="project-link" href="https://github.com/yashhh14/BookMyJourney" target="_blank" rel="noopener">
               <img src="./assets/git.png" alt=""> GitHub
             </a>
           </div>
         </div>
       </div>
+      <!-- Voyara -->
+      <div class="project-card reveal">
+        <div class="project-bar">
+          <span class="editor-dot r" style="width:9px;height:9px;"></span>
+          <span class="editor-dot y" style="width:9px;height:9px;"></span>
+          <span class="editor-dot g" style="width:9px;height:9px;"></span>
+          <span class="file">voyara.js</span>
+        </div>
 
+        <div class="project-body">
+          <div class="project-title">Voyara</div>
+          <span class="project-role">Social Media Application · Full-Stack Development</span>
+
+          <ul class="project-list">
+            <li>Developed a social media application with user authentication, profile management, and privacy settings.
+            </li>
+            <li>Implemented follow/unfollow functionality and user search for social interactions.</li>
+            <li>Integrated real-time messaging using Socket.IO for instant communication.</li>
+            <li>Implemented image uploads using Multer and managed related data using MongoDB and Mongoose Populate.
+            </li>
+          </ul>
+
+          <div class="project-stack">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>Mongoose</span>
+            <span>Socket.IO</span>
+            <span>Multer</span>
+            <span>JWT</span>
+          </div>
+
+          <div class="project-links">
+            <a class="project-link live" href="https://voyarav1.netlify.app/" target="_blank" rel="noopener">
+              ↗ Live Demo
+            </a>
+            <a class="project-link" href="https://github.com/yashhh14/Voyara" target="_blank" rel="noopener">
+              <img src="./assets/git.png" alt=""> GitHub
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <!-- Employee Management System -->
       <div class="project-card reveal">
         <div class="project-bar">
           <span class="editor-dot r" style="width:9px;height:9px;"></span>
@@ -275,20 +343,25 @@
 
         <div class="project-body">
           <div class="project-title">Employee Management System</div>
-          <span class="project-role">Full-Stack · MVC Architecture</span>
+          <span class="project-role">Backend Development · MVC Architecture</span>
+
           <ul class="project-list">
-            <li>Built a full-stack app with complete CRUD operations for employee records.</li>
-            <li>Connected frontend to backend APIs with Axios for seamless data flow.</li>
-            <li>Designed REST APIs with search, filtering, and pagination on MongoDB.</li>
+            <li>Developed REST APIs to manage employee records with complete CRUD operations.</li>
+            <li>Implemented search, filtering, and pagination for efficient employee data management.</li>
+            <li>Integrated MongoDB with Mongoose for database operations and structured data handling.</li>
+            <li>Organized backend components using MVC architecture for maintainability and scalability.</li>
           </ul>
 
           <div class="project-stack">
-            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Mongoose</span><span>Axios</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>Mongoose</span>
+            <span>REST APIs</span>
+            <span>MVC</span>
           </div>
 
           <div class="project-links">
-            <a class="project-link live" href="https://emsbackendapp.netlify.app/" target="_blank" rel="noopener">↗ Live
-              Demo</a>
             <a class="project-link" href="https://github.com/yashhh14/Employee-Management-System" target="_blank"
               rel="noopener">
               <img src="./assets/git.png" alt=""> GitHub
@@ -296,6 +369,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </section>
   <section class="section" id="contact">
@@ -340,4 +414,5 @@
   <div class="to-top" id="toTop">↑</div>
   <script src="./portfolio.js"></script>
 </body>
+
 </html>
